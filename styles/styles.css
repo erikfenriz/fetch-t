@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    background: #ecf0f1;
+    padding: 2.23em;
+}
+
+.title {
+    text-align: center;
+    color: #303030;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+div.user-profile {
+    background-color: azure;
+    width: 700px;
+    height: 200px;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+img{
+    width: 8em;
+    height: 8em;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 50%;
+}
+
+#fullname, #username,
+#description {
+    margin: auto;
+    margin-top: 1.35em;
+    margin-right: 3em;
+    width: 18em;
+    position: relative;
+    bottom: 6em;
+
+}
+
+#fullname {
+    color: #2b2b2b;
+    font-size: 20px;
+    margin-left: 8em;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-top: 0;
+
+}
+
+#username {
+    color: #3fba35;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+#description {
+    color: cornflowerblue;
+    font-weight: 200;
+    font-family: "varela round", sans-serif;
+}
+
+.footer {
+    margin: 1em auto;
+    height: 3.70em;
+    background: #1bbf9a;
+    text-align: center;
+    border-radius: 0 0 .3em .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.1s;
+    position: relative;
+    bottom: 6em;
+}
+
+.footer:hover {
+    background-color: #58eeb1;
+}
+
+.footer:active {
+    background-color: aquamarine;
+}
+
+#btn {
+    width: inherit;
+    height: inherit;
+    border: 0;
+    outline: none;
+    background: none;
+    font-family: "Coda", sans-serif;
+    font-size: large;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+

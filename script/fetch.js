@@ -8,7 +8,9 @@ let d = document,
     address = d.getElementById("city"),
     //dog start
     getDog = d.getElementById("btn-dog"),
-    dogImage = d.getElementById("dog-image");
+    dogImage = d.getElementById("dog-image"),
+    //currency start
+    calculate = d.getElementById("btn-currency");
 btn.addEventListener("click", function(){
     let url = "https://randomuser.me/api/";
     fetch(url)
@@ -45,6 +47,28 @@ getDog.addEventListener("click", function(){
             return response.json(response).then(function (data) {
                 console.log(data);
                dogImage.src = data.message;
+            })
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+});
+function handleErrors (request){
+    if(!request.ok) {
+        throw Error(request.status);
+    }
+    return request;
+}
+
+calculate.addEventListener("click", function(){
+    let url = "https://dog.ceo/api/breeds/image/random";
+    fetch(url)
+        .then(handleErrors)
+        .then(function(response){
+            console.log("Steady!");
+            return response.json(response).then(function (data) {
+                console.log(data);
+                dogImage.src = data.message;
             })
         })
         .catch(function(error){

@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 @import url('https://fonts.googleapis.com/css?family=Tajawal');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 body {
     background: #ecf0f1;
     padding: 2.23em;
@@ -20,7 +30,7 @@ body {
 div.user-profile {
     background-color: azure;
     width: 700px;
-    height: 250px;
+    height: 245px;
     max-width: 500px;
     text-align: left;
     margin: 0 auto;
@@ -113,6 +123,8 @@ img{
                                   supported by Chrome and Opera */
 }
 
+
+
 #btn-dog{
     width: inherit;
     height: inherit;
@@ -127,6 +139,21 @@ img{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+#btn-currency{
+    width: inherit;
+    height: inherit;
+    border: 0;
+    outline: none;
+    background: none;
+    font-family: "Coda", sans-serif;
+    font-size: large;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 

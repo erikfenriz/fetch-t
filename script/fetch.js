@@ -12,14 +12,13 @@ btn.addEventListener("click", function(){
         .then(function(response){
             console.log("Steady!");
             return response.json(response).then(function (data) {
-
                 let user = data.results[0];
                 console.log(user);
                 img.src = user.picture.large;
                 name.innerHTML = user.name.first.toUpperCase() + " " + user.name.last.toUpperCase();
                 id.innerHTML = user.login.username;
                 email.innerHTML = user.email;
-                address.innerHTML = user.location.city.charAt(0).toUpperCase()  + user.location.city.slice(1);;
+                address.innerHTML = user.location.city.charAt(0).toUpperCase() + user.location.city.slice(1);;
             })
         })
         .catch(function(error){

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 @import url('https://fonts.googleapis.com/css?family=Tajawal');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
-*{
+* {
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -23,8 +24,9 @@ body {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
 }
 
 div.user-profile {
@@ -37,7 +39,7 @@ div.user-profile {
     border-radius: 15px 15px 0 0;
 }
 
-img{
+img {
     width: 8em;
     height: 8em;
     margin-left: 1em;
@@ -45,7 +47,7 @@ img{
     border-radius: 50%;
 }
 
-#dog-image{
+#dog-image {
     width: 260px;
     height: 230px;
     margin: 0 auto;
@@ -119,13 +121,12 @@ img{
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
 }
 
-
-
-#btn-dog{
+#btn-dog {
     width: inherit;
     height: inherit;
     border: 0;
@@ -137,11 +138,35 @@ img{
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
 }
 
-#btn-currency{
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 100%;
+    padding: 13px;
+}
+
+.currency {
+    padding: 30px 15px 0 0;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 300;
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+}
+
+.odometer {
+    font-size: 55px;
+    top: 50px;
+}
+
+#btn-currency {
     width: inherit;
     height: inherit;
     border: 0;

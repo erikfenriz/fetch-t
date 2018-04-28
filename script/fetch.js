@@ -61,14 +61,16 @@ function handleErrors (request){
 }
 
 calculate.addEventListener("click", function(){
-    let url = "https://dog.ceo/api/breeds/image/random";
+    let url = "https://api.coindesk.com/v1/bpi/currentprice.json";
     fetch(url)
         .then(handleErrors)
         .then(function(response){
             console.log("Steady!");
             return response.json(response).then(function (data) {
                 console.log(data);
-                dogImage.src = data.message;
+                let btc2dollar = data.bpi.USD.rate_float;
+                    odometer.innerHTML = Math.round(btc2dollar);
+
             })
         })
         .catch(function(error){
@@ -81,3 +83,4 @@ function handleErrors (request){
     }
     return request;
 }
+

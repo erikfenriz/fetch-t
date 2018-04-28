@@ -5,12 +5,15 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Fetch API</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css">
 </head>
 <body>
 
 <h1 class="title">Random User Generator</h1>
 <div class="user-profile">
-    <img id="avatar" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-hacker-3830b32ad9e0802c-512x512.png" alt="avatar">
+    <img id="avatar"
+         src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-hacker-3830b32ad9e0802c-512x512.png"
+         alt="avatar">
     <div id="fullname">Full name</div>
     <div id="username">User name</div>
     <div id="description">
@@ -24,20 +27,36 @@
 
 <h1 class="title">Random Dog Generator</h1>
 <div class="user-profile" style="height: 280px;">
-    <img src="https://thumbs.dreamstime.com/b/dog-collection-chihuahua-geometric-style-avatar-icon-round-set-88200175.jpg" alt="avatar"
-            id="dog-image">
+    <img src="https://thumbs.dreamstime.com/b/dog-collection-chihuahua-geometric-style-avatar-icon-round-set-88200175.jpg"
+         alt="avatar"
+         id="dog-image">
     <div style="position: relative; bottom: 1.4em" class="footer">
         <button id="btn-dog">Next Dog</button>
     </div>
 </div>
 
 <h1 class="title">Get Currency</h1>
-<div style="height: 15em" class="user-profile">
-    <div style="position: relative; top: 15em" class="footer">
+<div style="height: 13.4em" class="user-profile">
+
+    <div class="row">
+        <div class="column">
+            <div class="currency">1 BTC = &#x24;</div>
+        </div>
+     <div class="column">
+         <div class="currency odometer dollar" id="odometer">9999</div>
+
+
+     </div>
+    </div>
+
+    <div style="position: relative; top: 5em" class="footer">
+
         <button id="btn-currency">Calculate</button>
+
     </div>
 </div>
 
+<script src="http://github.hubspot.com/odometer/odometer.js"></script>
 <script src="script/fetch.js"></script>
 </body>
 </html>

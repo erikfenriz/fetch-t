@@ -1,10 +1,14 @@
-let d = document;
-let btn = d.getElementById("btn");
-let img = d.getElementById("avatar");
-let email = d.getElementById("email");
-let id = d.getElementById("username");
-let name = d.getElementById("fullname");
-let address = d.getElementById("city");
+let d = document,
+    //user start
+    btn = d.getElementById("btn"),
+    img = d.getElementById("avatar"),
+    email = d.getElementById("email"),
+    id = d.getElementById("username"),
+    name = d.getElementById("fullname"),
+    address = d.getElementById("city"),
+    //dog start
+    getDog = d.getElementById("btn-dog"),
+    dogImage = d.getElementById("dog-image");
 btn.addEventListener("click", function(){
     let url = "https://randomuser.me/api/";
     fetch(url)
@@ -19,6 +23,28 @@ btn.addEventListener("click", function(){
                 id.innerHTML = user.login.username;
                 email.innerHTML = user.email;
                 address.innerHTML = user.location.city.charAt(0).toUpperCase() + user.location.city.slice(1);;
+            })
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+});
+function handleErrors (request){
+    if(!request.ok) {
+        throw Error(request.status);
+    }
+    return request;
+}
+
+getDog.addEventListener("click", function(){
+    let url = "https://dog.ceo/api/breeds/image/random";
+    fetch(url)
+        .then(handleErrors)
+        .then(function(response){
+            console.log("Steady!");
+            return response.json(response).then(function (data) {
+                console.log(data);
+               dogImage.src = data.message;
             })
         })
         .catch(function(error){
